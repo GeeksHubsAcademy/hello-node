@@ -1,6 +1,5 @@
+// const sum = require('./sum.js'); //CommonJS modules
+import sum from './sum.js'; //ES6 modules
 const params = process.argv.slice(2);
-if (params.some(param => isNaN(+param))) {
-    throw new Error('pasa numbers mamón')
-}
-const total = params.reduce((pre, cur) => pre + cur, 0);
-console.log(total)
+const total = sum(params);
+console.log(total);
