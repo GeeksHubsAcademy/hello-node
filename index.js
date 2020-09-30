@@ -1,5 +1,5 @@
 const express = require('express');
-const fs = require('fs/promises'); // es de node, no es una librería
+const fs = require('fs').promises; // es de node, no es una librería
 const app = express()
 
 app.get('/characters', async(req, res) => {
